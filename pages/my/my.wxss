@@ -1,0 +1,61 @@
+page {
+  background-color: #ffffff; }
+
+.my {
+  box-sizing: border-box;
+  padding: 3% 6%;
+  background-color: #fff;
+  height: 200rpx;
+  display: flex;
+  align-items: center; }
+  .my image {
+    border-radius: 50%;
+    width: 120rpx;
+    height: 120rpx; }
+  .my .my-name {
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: 46rpx;
+    color: #333333; }
+
+.blank_line {
+  height: 30rpx;
+  background: #F5F5F5; }
+
+.list {
+  padding: 0 30rpx; }
+  .list .wallet {
+    padding: 30rpx 0;
+    display: flex;
+    justify-content: space-between;
+    background: #fff; }
+    .list .wallet {
+      position: relative; }
+      .list .wallet:after {
+        content: '';
+        position: absolute;
+        top: 0;
+        left: 0;
+        width: 200%;
+        height: 200%;
+        border-bottom: 1px solid #e0e0e0;
+        box-sizing: border-box;
+        transform: scale(0.5);
+        transform-origin: 0 0;
+        pointer-events: none; }
+    .list .wallet > view {
+      display: flex;
+      align-items: center; }
+    .list .wallet .name {
+      font-size: 32rpx;
+      color: #333333; }
+      .list .wallet .name .icon {
+        width: 48rpx;
+        height: 48rpx;
+        margin-right: 10rpx; }
+    .list .wallet .desc {
+      font-size: 28rpx;
+      color: #969FA9; }
+      .list .wallet .desc .icon {
+        margin-top: 5rpx;
+        font-size: 28rpx; }

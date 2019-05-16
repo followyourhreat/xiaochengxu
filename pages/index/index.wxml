@@ -1,0 +1,18 @@
+<view class="prompt">
+  <image src="/image/home_bg.png"></image>
+  <view>点击下方按钮</view>
+  <view>扫码喝水</view>
+</view>
+
+<view class="protocol">
+  <checkbox-group bindchange="agree">
+    <label>
+      <checkbox value="1" checked>
+        <text>同意</text>
+      </checkbox>
+    </label>
+    <text bindtap="protocol">《用户协议》</text>
+  </checkbox-group>
+</view>
+
+<tabBar></tabBar>

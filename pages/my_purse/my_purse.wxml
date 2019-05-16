@@ -1,0 +1,32 @@
+<view class="purse">
+  <view class="purse-title">账户余额</view>
+  <view class="purse-price">
+    <text>{{balance}}</text>
+    <text>元</text>
+  </view>
+</view>
+
+<!--<view class="recharge">-->
+<!--<view class="recharge-title">充值金额：</view>-->
+<!--<view class="recharge-enter">-->
+<!--<input type="number" bindinput="inputMoney" placeholder="请输入充值金额，最低1元"/>-->
+<!--</view>-->
+<!--</view>-->
+<view class="select-water">
+  <view class="title">充值金额：</view>
+  <view class="list">
+    <view class="item {{tabIndex===1?'item-selected':''}}" data-price="{{10}}" data-id="{{1}}" bindtap="tab">
+      <view style="font-size: 16px;">￥10元<view style="font-size: 20px;display:inline-block;">/</view>20L水</view>
+      <!-- <view>20L水</view> -->
+    </view>
+
+    <!-- <view class="item {{tabIndex===2?'item-selected':''}}" data-price="{{20}}" data-id="{{2}}" bindtap="tab">
+      <view>￥20</view>
+      <view>赠送30元</view>
+    </view> -->
+  </view>
+</view>
+
+<view class="btn-box">
+  <view class="btn" bindtap="pay">立即充值</view>
+</view>

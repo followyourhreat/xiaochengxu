@@ -1,0 +1,21 @@
+<view class="water">
+  <image src="/image/access.png"></image>
+  <view class="water-title">授权失败</view>
+  <view class="water-time">拒绝“咕咚饮水”授权，将影响您的饮水计费</view>
+</view>
+
+<view class="access">
+  <view class="title">允许“咕咚饮水”使用我的</view>
+  <view class="switch">
+    <view>获取你的公开信息</view>
+    <view>
+      <switch checked color="#498A08" bindchange="switch"></switch>
+    </view>
+  </view>
+  <view class="desc">点击下方“
+    <text>重新授权</text>
+    ”按钮，按图示打开授权。
+  </view>
+</view>
+
+<button disabled="{{switch}}" class="access-btn" open-type="openSetting">重新授权</button>

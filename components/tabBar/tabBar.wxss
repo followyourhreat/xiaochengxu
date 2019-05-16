@@ -1,0 +1,55 @@
+.blank {
+  height: 100rpx; }
+
+.tabBar {
+  box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.03);
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  background-color: #ffffff; }
+  .tabBar .tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column; }
+    .tabBar .tab .tab-icon {
+      width: 54rpx;
+      height: 54rpx; }
+    .tabBar .tab .scan_box {
+      position: absolute;
+      bottom: calc(100% - 60rpx);
+      width: 220rpx;
+      height: 120rpx;
+      border-radius: 120rpx;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff; }
+      .tabBar .tab .scan_box .scan_btn {
+        background-color: #498a08;
+        width: 188rpx;
+        height: 88rpx;
+        border-radius: 88rpx;
+        display: flex;
+        align-items: center;
+        justify-content: center; }
+        .tabBar .tab .scan_box .scan_btn .scan_code {
+          width: 54rpx;
+          height: 54rpx;
+          opacity: .8; }
+    .tabBar .tab .tab-text {
+      font-size: 22rpx; }
+    .tabBar .tab .tab-selected {
+      color: #498a08; }
+
+button {
+  padding: 0;
+  line-height: 1.5;
+  background-color: #FFFFFF; }
+  button:after {
+    border: none !important; }

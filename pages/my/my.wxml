@@ -1,0 +1,21 @@
+<view class="my">
+  <image src="{{info.avatarUrl}}"></image>
+  <view class="my-name">{{nickName}}</view>
+</view>
+
+<view class="blank_line"></view>
+
+<view class="list">
+  <navigator url="/pages/my_purse/my_purse" class="wallet">
+    <view class="name">
+      <image class="icon" src="/image/me_icon_wallet.png"></image>
+      <view>我的钱包</view>
+    </view>
+    <view class="desc">
+      <view>可用余额{{balance}}</view>
+      <view class="icon icon-arrow"></view>
+    </view>
+  </navigator>
+</view>
+
+<tabBar set-index="{{setIndex}}"></tabBar>

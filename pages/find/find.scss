@@ -1,0 +1,27 @@
+@import "../../common";
+
+page {
+  background-color: #FFFFFF;
+}
+
+.news-list {
+  padding: rpx(30);
+  .item {
+    margin-bottom: rpx(30);
+    image {
+      border-radius: rpx(10);
+      width: 100%;
+      height: rpx(240);
+    }
+    .title {
+      font-weight: bold;
+      font-size: rpx(32);
+      color: #343434;
+      margin: rpx(15) 0;
+    }
+    .date {
+      font-size: rpx(24);
+      color: #737373;
+    }
+  }
+}

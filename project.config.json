@@ -1,0 +1,108 @@
+{
+	"description": "项目配置文件。",
+	"packOptions": {
+		"ignore": []
+	},
+	"setting": {
+		"urlCheck": false,
+		"es6": true,
+		"postcss": true,
+		"minified": true,
+		"newFeature": true
+	},
+	"compileType": "miniprogram",
+	"libVersion": "2.3.0",
+	"appid": "wx58b8019fc43184ef",
+	"projectname": "qixing-test2",
+	"isGameTourist": false,
+	"condition": {
+		"search": {
+			"current": -1,
+			"list": []
+		},
+		"conversation": {
+			"current": -1,
+			"list": []
+		},
+		"plugin": {
+			"current": -1,
+			"list": []
+		},
+		"game": {
+			"currentL": -1,
+			"list": []
+		},
+		"miniprogram": {
+			"current": 10,
+			"list": [
+				{
+					"id": -1,
+					"name": "用户协议",
+					"pathName": "pages/protocol/protocol",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "my",
+					"pathName": "pages/my/my",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "我的钱包",
+					"pathName": "pages/my_purse/my_purse",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "开始取水-vip",
+					"pathName": "pages/water_vip/water_vip",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "取水结束-vip",
+					"pathName": "pages/water_vip_over/water_vip_over",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "开始取水",
+					"pathName": "pages/water/water",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "取水结束",
+					"pathName": "pages/water_over/water_over",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "发现",
+					"pathName": "pages/find/find",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "文章详情",
+					"pathName": "pages/find_info/find_info",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "重新授权",
+					"pathName": "pages/access/access",
+					"query": ""
+				},
+				{
+					"id": -1,
+					"name": "扫码",
+					"pathName": "pages/scanCode/scanCode",
+					"query": "code=867569034842761",
+					"scene": "1011"
+				}
+			]
+		}
+	}
+}

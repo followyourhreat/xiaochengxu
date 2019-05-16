@@ -1,0 +1,36 @@
+checkbox .wx-checkbox-input {
+  width: 32rpx;
+  height: 32rpx; }
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background-color: #498a08; }
+
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #fff; }
+
+.prompt {
+  margin-top: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: 32rpx;
+  color: #A6A7AD; }
+  .prompt image {
+    width: 188rpx;
+    height: 170rpx;
+    margin-bottom: 3.5%; }
+
+.protocol {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: 28rpx; }
+  .protocol checkbox-group {
+    display: flex;
+    align-items: center; }
+  .protocol text:first-child {
+    color: #A6A7AD; }
+  .protocol text:last-child {
+    color: #498a08; }

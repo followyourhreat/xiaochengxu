@@ -1,0 +1,63 @@
+@import "../../common";
+
+page {
+  background-color: #ffffff;
+}
+
+.my {
+  box-sizing: border-box;
+  padding: 3% 6%;
+  background-color: #fff;
+  height: rpx(200);
+  display: flex;
+  align-items: center;
+  image {
+    border-radius: 50%;
+    width: rpx(120);
+    height: rpx(120);
+  }
+  .my-name {
+    margin-left: 5%;
+    font-weight: bold;
+    font-size: rpx(46);
+    color: #333333;
+  }
+}
+
+.blank_line {
+  height: rpx(30);
+  background: #F5F5F5;
+}
+
+.list {
+  padding: 0 rpx(30);
+  .wallet {
+    padding: rpx(30) 0;
+    display: flex;
+    justify-content: space-between;
+    background: #fff;
+    @include border(true);
+
+    > view {
+      display: flex;
+      align-items: center;
+    }
+    .name {
+      font-size: rpx(32);
+      color: #333333;
+      .icon {
+        width: rpx(48);
+        height: rpx(48);
+        margin-right: rpx(10);
+      }
+    }
+    .desc {
+      font-size: rpx(28);
+      color: #969FA9;
+      .icon {
+        margin-top: rpx(5);
+        font-size: rpx(28);
+      }
+    }
+  }
+}

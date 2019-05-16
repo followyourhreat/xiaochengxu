@@ -1,0 +1,46 @@
+@function rpx($rpx:0) {
+  @return $rpx*1rpx;
+}
+
+$color: #173d71;
+$bgColor: #498a08;
+
+@mixin ell() {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}
+
+@mixin img {
+  position: relative;
+  padding-top: percentage(200/750);
+  height: 0;
+  overflow: hidden;
+  imgage {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+  }
+}
+
+@mixin border($last:true,$direction:bottom,$color:#e0e0e0) {
+  $last: if($last, null, ':not(:last-child)');
+  $direction: if($direction, -$direction, null);
+  &#{$last} {
+    position: relative;
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 200%;
+      height: 200%;
+      border#{$direction}: 1px solid $color;
+      box-sizing: border-box;
+      transform: scale(.5);
+      transform-origin: 0 0;
+      pointer-events: none;
+    }
+  }
+}

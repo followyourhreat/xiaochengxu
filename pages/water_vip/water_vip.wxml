@@ -1,0 +1,45 @@
+<view class="water">
+  <view class="waveWrapper waveAnimation">
+    <view class="waveWrapperInner bgTop">
+      <view class="wave waveTop"></view>
+    </view>
+    <view class="waveWrapperInner bgMiddle">
+      <view class="wave waveMiddle"></view>
+    </view>
+    <view class="waveWrapperInner bgBottom">
+      <view class="wave waveBottom"></view>
+    </view>
+  </view>
+  <view class="quality">优</view>
+  <view class="tds">{{tds}}ppm</view>
+</view>
+
+<view class="current">当前水质</view>
+
+<view class="desc">
+  <text>※水质说明：
+    经过RO反渗透多级全封闭环保净化后，设备出水符合国家《饮用净水水质标准-CJ94-2005》标准，水质安全适宜新鲜直饮，请您放心饮用。
+  </text>
+</view>
+
+<view class="info">
+  <view>
+    <view>您的账户余额</view>
+    <view>{{money}}元</view>
+  </view>
+  <view>
+    <view>您可取水量</view>
+    <view>{{max_dosage}}ml</view>
+  </view>
+</view>
+
+<view class="desc">
+  <text>※提示：
+    现在你可以按设备上的开关进行取水了，点击“停止取水”或取水中断30秒后开关将自动关闭并计费该次饮水，若需再取水需要重新扫码，请把握时间。祝您身体健康，万事如意！
+  </text>
+</view>
+
+<view class="btn-box">
+  <view class="btn" bindtap="stopWater">停止取水</view>
+  <navigator url="/pages/my_purse/my_purse" class="btn">去充值</navigator>
+</view>

@@ -1,0 +1,15 @@
+.protocol {
+  padding: 30rpx; }
+  .protocol .title {
+    font-size: 36rpx;
+    color: #343434;
+    font-weight: bold;
+    margin-bottom: .5em; }
+  .protocol .sub-title {
+    margin: 1em 0;
+    font-weight: bold; }
+  .protocol .text {
+    color: #555555;
+    font-size: 32rpx;
+    letter-spacing: 1px;
+    line-height: 58rpx; }

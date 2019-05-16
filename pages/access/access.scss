@@ -1,0 +1,62 @@
+@import "../../common";
+
+.water {
+  margin-top: rpx(80);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  image {
+    width: rpx(250);
+    height: rpx(200);
+  }
+  .water-title {
+    font-size: rpx(36);
+    color: #AEB0B6;
+    margin: rpx(15) 0;
+  }
+  .water-time {
+    font-size: rpx(28);
+    color: #AEB0B6;
+  }
+}
+
+.access {
+  margin-top: rpx(100);
+  padding: 0 rpx(30);
+  .title {
+    font-size: rpx(28);
+    color: #8A8A8A;
+  }
+  .switch {
+    margin: rpx(30) 0;
+    padding: 0 rpx(30);
+    height: rpx(120);
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-size: rpx(28);
+    color: #011111;
+  }
+  .desc {
+    font-size: rpx(28);
+    color: #8A8A8A;
+    text {
+      color: #498A08;
+    }
+  }
+}
+
+.access-btn {
+  border-radius: 0;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: rpx(100);
+  line-height: rpx(100);
+  text-align: center;
+  background-color: $bgColor;
+  color: #FFFFFF;
+  font-size: rpx(32);
+}

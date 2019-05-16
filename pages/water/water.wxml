@@ -1,0 +1,42 @@
+<view class="water">
+  <view class="waveWrapper waveAnimation">
+    <view class="waveWrapperInner bgTop">
+      <view class="wave waveTop"></view>
+    </view>
+    <view class="waveWrapperInner bgMiddle">
+      <view class="wave waveMiddle"></view>
+    </view>
+    <view class="waveWrapperInner bgBottom">
+      <view class="wave waveBottom"></view>
+    </view>
+  </view>
+  <view class="quality">优</view>
+  <view class="tds">{{tds}}ppm</view>
+</view>
+
+<view class="current">当前水质</view>
+
+<view class="desc">
+  <text>※水质说明：
+    经过RO反渗透多级全封闭环保净化后，设备出水符合国家《饮用净水水质标准-CJ94-2005》标准，水质安全适宜新鲜直饮，请您放心饮用。
+  </text>
+</view>
+
+<view class="select-water">
+  <view class="title">请选择水量：</view>
+  <view class="list">
+
+    <block wx:for="{{water}}" wx:key="{{index}}">
+      <view class="item {{water_package_id===item.id?'item-selected':''}}" data-item="{{item}}" data-id="{{item.id}}"
+            bindtap="tab">
+        <view>{{item.dosage}}ml</view>
+        <view>{{item.money}}元</view>
+      </view>
+    </block>
+
+  </view>
+</view>
+
+<view class="btn">
+  <view bindtap="pay">立即购买</view>
+</view>

@@ -1,0 +1,50 @@
+@import "../../common";
+
+checkbox .wx-checkbox-input {
+  width: rpx(32);
+  height: rpx(32);
+}
+
+//选中后的 背景样式
+checkbox .wx-checkbox-input.wx-checkbox-input-checked {
+  background-color: $bgColor;
+}
+
+//选中后的 对勾样式
+checkbox .wx-checkbox-input.wx-checkbox-input-checked::before {
+  color: #fff;
+}
+
+.prompt {
+  margin-top: 25%;
+  display: flex;
+  align-items: center;
+  flex-direction: column;
+  font-size: rpx(32);
+  color: #A6A7AD;
+  image {
+    width: rpx(188);
+    height: rpx(170);
+    margin-bottom: 3.5%;
+  }
+}
+
+.protocol {
+  position: absolute;
+  bottom: 20%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  font-size: rpx(28);
+  checkbox-group {
+    display: flex;
+    align-items: center;
+  }
+
+  text:first-child {
+    color: #A6A7AD;
+  }
+  text:last-child {
+    color: $bgColor;
+  }
+}

@@ -1,0 +1,70 @@
+@import "../../common";
+
+.blank {
+  height: rpx(100);
+}
+
+.tabBar {
+  box-shadow: 0 -5px 20px 0 rgba(0, 0, 0, 0.03);
+  display: flex;
+  position: fixed;
+  z-index: 999;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: rpx(100);
+  background-color: #ffffff;
+
+  .tab {
+    flex: 1;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    .tab-icon {
+      width: rpx(54);
+      height: rpx(54);
+    }
+    .scan_box {
+      position: absolute;
+      bottom: calc(100% - #{rpx(120/2)});
+      width: rpx(220);
+      height: rpx(120);
+      border-radius: rpx(120);
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      background-color: #ffffff;
+      .scan_btn {
+        background-color: $bgColor;
+        width: rpx(188);
+        height: rpx(88);
+        border-radius: rpx(88);
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        .scan_code {
+          width: rpx(54);
+          height: rpx(54);
+          opacity: .8;
+        }
+      }
+    }
+
+    .tab-text {
+      font-size: rpx(22);
+    }
+    .tab-selected {
+      color: $bgColor;
+    }
+  }
+}
+
+button {
+  padding: 0;
+  line-height: 1.5;
+  background-color: #FFFFFF;
+  &:after {
+    border: none !important;
+  }
+}

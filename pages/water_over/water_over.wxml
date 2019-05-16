@@ -1,0 +1,38 @@
+<view class="water">
+  <image src="/image/Order_bg.png"></image>
+  <view class="water-title">请按下按钮取水</view>
+  <view class="water-time">左：热水,右：常温水；中断取水30s后机器自动清零</view>
+</view>
+
+<view class="order">
+  <view class="order-item">
+    <view>
+      <image src="/image/icon_tequipment.png"></image>
+      购买水量
+    </view>
+    <view class="item-water">{{water.dosage}}ml</view>
+  </view>
+  <view class="order-item">
+    <view>
+      <image src="/image/icon_port.png"></image>
+      支付金额
+    </view>
+    <view class="item-price">{{water.money}}元</view>
+  </view>
+</view>
+
+<view class="over-btn">
+  <navigator class="btn" url="/pages/my_purse/my_purse">去充值</navigator>
+  <navigator class="btn" open-type="redirect" url="/pages/index/index">完成</navigator>
+</view>
+
+<view class="remind">
+  <view>※咕咚饮水提醒：</view>
+  <view>
+    支付成功后，请按住机器上的红/蓝按钮出水，其中
+    <text class="remind-red">红色代表热水</text>
+    ，
+    <text class="remind-blue">蓝色代表冷水</text>
+    ，松开按钮即停止出水，为了让更多人能及时饮水，在中断出水30S后，设备会自动清零该次饮水信息，谢谢您的理解与配合！
+  </view>
+</view>

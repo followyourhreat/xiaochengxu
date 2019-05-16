@@ -1,0 +1,13 @@
+<view class="news-list">
+
+  <block wx:for="{{list}}" wx:key="{{item.id}}">
+    <navigator url='/pages/find_info/find_info?id={{item.id}}' class="item">
+      <image src="{{domain+item.cover_img}}"></image>
+      <view class="title">{{item.title}}</view>
+      <view class="date">发布时间：{{item.utime}}</view>
+    </navigator>
+  </block>
+
+</view>
+
+<tabBar set-index="{{setIndex}}"></tabBar>

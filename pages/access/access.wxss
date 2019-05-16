@@ -1,0 +1,50 @@
+.water {
+  margin-top: 80rpx;
+  display: flex;
+  flex-direction: column;
+  align-items: center; }
+  .water image {
+    width: 250rpx;
+    height: 200rpx; }
+  .water .water-title {
+    font-size: 36rpx;
+    color: #AEB0B6;
+    margin: 15rpx 0; }
+  .water .water-time {
+    font-size: 28rpx;
+    color: #AEB0B6; }
+
+.access {
+  margin-top: 100rpx;
+  padding: 0 30rpx; }
+  .access .title {
+    font-size: 28rpx;
+    color: #8A8A8A; }
+  .access .switch {
+    margin: 30rpx 0;
+    padding: 0 30rpx;
+    height: 120rpx;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #FFFFFF;
+    font-size: 28rpx;
+    color: #011111; }
+  .access .desc {
+    font-size: 28rpx;
+    color: #8A8A8A; }
+    .access .desc text {
+      color: #498A08; }
+
+.access-btn {
+  border-radius: 0;
+  box-sizing: border-box;
+  position: fixed;
+  width: 100%;
+  bottom: 0;
+  height: 100rpx;
+  line-height: 100rpx;
+  text-align: center;
+  background-color: #498a08;
+  color: #FFFFFF;
+  font-size: 32rpx; }

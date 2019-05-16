@@ -1,0 +1,83 @@
+@import "../../common";
+
+.water {
+  margin-top: rpx(80);
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  image {
+    width: rpx(250);
+    height: rpx(200);
+  }
+  .water-title {
+    margin: rpx(15) 0;
+    font-weight: bold;
+    font-size: rpx(36);
+    color: $bgColor;
+  }
+  .water-time {
+    font-size: rpx(28);
+    color: $bgColor;
+  }
+}
+
+.order {
+  padding: rpx(30);
+  .order-item {
+    padding: rpx(30) 0;
+    display: flex;
+    justify-content: space-between;
+    @include border();
+
+    > view {
+      display: flex;
+      align-items: center;
+      font-size: rpx(28);
+      color: #333333;
+
+      image {
+        margin-right: rpx(15);
+        width: rpx(48);
+        height: rpx(48);
+      }
+    }
+    .item-water {
+      font-size: rpx(28);
+      color: #498A08;
+    }
+    .item-price {
+      font-size: rpx(28);
+      color: #FF8351;
+    }
+  }
+}
+
+.over-btn {
+  margin-top: rpx(160);
+  text-align: center;
+  display: flex;
+  justify-content: center;
+  .btn {
+    width: rpx(560);
+    height: rpx(94);
+    background: #498A08;
+    border-radius: rpx(94);
+    line-height: rpx(94);
+    font-size: rpx(32);
+    color: #FFFFFF;
+  }
+}
+
+.remind {
+  padding: rpx(30);
+  font-size: rpx(24);
+  color: #999BA2;
+  letter-spacing: 0;
+  line-height: rpx(42);
+  .remind-red {
+    color: #fc5757;
+  }
+  .remind-blue {
+    color: #0c97fe;
+  }
+}
